@@ -11,8 +11,8 @@ jobs:
         with:
           python-version: 3.9
       - name: Install
-        run: make install
+        run: make install ACTIVATE=
       - name: Lint
-        run: make lint
+        run: make lint ACTIVATE=
       - name: Test
-        run: make test
+        run: make test ACTIVATE=
