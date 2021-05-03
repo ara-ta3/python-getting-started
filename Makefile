@@ -14,7 +14,7 @@ dist:
 	mkdir -p $@
 
 install:
-	$(PIP) install -r requirements.txt -c constraints.txt
+	$(PIP) install -r requirements.txt
 
 lint:
 	$(ACTIVATE) pycodestyle main.py $(PACKAGES)
@@ -24,7 +24,7 @@ test:
 	$(ACTIVATE) pytest -v
 
 freeze:
-	$(PIP) freeze > constraints.txt
+	$(PIP) freeze > requirements.txt
 
 venv:
 	$(PYTHON_RUNTIME) -m venv venv
