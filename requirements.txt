@@ -10,4 +10,4 @@ pyparsing==3.1.0
 pytest==7.4.0
 toml==0.10.2
 typed-ast==1.5.4
-typing-extensions==4.7.0
+typing-extensions==4.7.1
